@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #f0f0f0;
+}
+
+#nameInput, #clanInput {
+  position: absolute;
+  left: 10px;
+  z-index: 10;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2c2c2c;
+  color: #fff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255,255,255,0.2);
+  transition: box-shadow 0.2s ease;
+}
+
+#nameInput:focus, #clanInput:focus {
+  box-shadow: 0 0 8px rgba(0, 150, 255, 0.5);
+}
+
+#nameInput {
+  top: 10px;
+}
+
+#clanInput {
+  top: 50px;
+}
+
+#chat {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 300px;
+}
+
+#messages {
+  max-height: 150px;
+  overflow-y: auto;
+  background: #1e1e1e;
+  border-radius: 6px;
+  padding: 8px;
+  font-family: monospace;
+  font-size: 14px;
+  color: #e0e0e0;
+  box-shadow: 0 0 5px rgba(255,255,255,0.1);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#chatInput {
+  width: 100%;
+  padding: 6px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: #fff;
+  font-family: monospace;
+  margin-top: 4px;
+}
+
+.server-msg {
+  color: #4fc3f7;
+  font-style: italic;
+}
+
+.player-msg {
+  color: #fff;
+}
